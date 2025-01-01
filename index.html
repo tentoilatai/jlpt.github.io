@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <!-- Thẻ toàn cục (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-40EHB2F876"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-40EHB2F876');
+</script>
+  <!-- Kết thúc Google Analytics -->
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="description" content="Câu đố ký tự tiếng Nhật v.1.5.0">
+  <meta name="author" content="Bronson Avila">
+  <title>Câu đố ký tự tiếng Nhật</title>
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="icon" type="image/png" href="favicon.png">
+</head>
+
+<body>
+  <div id="outer">
+    <div id="inner">
+      <div id="title">Câu đố ký tự tiếng Nhật</div>
+      <div id="credits">Tác giả: Bronson Avila</div>
+      <div id="version">v.1.5.0</div>
+      <div id="answer"></div>
+      <div id="feedback">Chọn đáp án đúng bên dưới.</div>
+
+      <div id="cards">
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+      </div>
+
+      <div id="options">
+        <div>
+          <button id="gana-kana">Hiragana</button>
+          <div class="primary-mode light-on"></div>
+          <div class="secondary-mode"></div>
+          <button id="invert">JPN sang ENG</button>
+          <div class="primary-mode light-on"></div>
+          <div class="secondary-mode"></div>
+        </div>
+        <div>
+          <button id="skill">Cơ bản</button>
+          <div class="primary-mode light-on"></div>
+          <div class="secondary-mode"></div>
+          <button id="game-type">Ngẫu nhiên</button>
+          <div class="primary-mode light-on"></div>
+          <div class="secondary-mode"></div>
+        </div>
+        <div>
+          <button id="reset">Ký tự mới</button>
+          <div id="auto">
+            <span id="auto-text">AUTO<span id="colon">:</span></span>
+            <button id="auto-on" class="inactive-auto">BẬT</button>
+            <button id="auto-off" class="active-auto">TẮT</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="js/characters/advancedCharacters.js"></script>
+  <script type="text/javascript" src="js/characters/characters.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>
